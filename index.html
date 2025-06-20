@@ -3,15 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>My Resume - Mohamad Syazani Aiman Bin Shahrizan</title>
-  <link rel="stylesheet" href="style.css"> <!-- make sure this matches your CSS file -->
+  <link rel="stylesheet" href="style.css"> 
 </head>
+<div style="text-align:center; padding: 10px; font-size: 20px;">
+  <b>Current Time:</b> <span id="clock"></span>
+</div>
+
+<script>
+function showTime() {
+  var date = new Date();
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var s = date.getSeconds();
+  var session = "AM";
+
+  if(h == 0){
+    h = 12;
+  }
+
+  if(h > 12){
+    h = h - 12;
+    session = "PM";
+  }
+
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("clock").innerText = time;
+  setTimeout(showTime, 1000);
+}
+showTime();
+</script>
+
 <body>
 
 <div class="container">
   <aside>
     <div class="profile">
       <img src="C:\Users\User\Documents/profile.jpg" alt="Syazani "Janizy" Aiman>
-      <h1>Mohamad Syazani "Janizy" Aiman </h1>
+      <h2>Mohamad Syazani "Janizy" Aiman </h2>
       <p>Email: syazaniaiman666@gmail.com</p>
       <p>Phone: +60103961413</p>
       <p>Location: Johor Bahru,Johor, Malaysia</p>
@@ -27,58 +59,102 @@
   <a href="#education">Education</a>
   <a href="#experience">Experience</a>
   <a href="#skills">Skills</a>
+   <a href="#gallery">Gallery</a>
   <a href="#contact">Contact</a>
 </nav>
   </aside>
+  
 <br>
 <br>
 <br>
 <br>
 <br>
   <main>
-    <section id="about">
-  <h2>About Me</h2>
-      <p>I am a passionate and highly motivated student currently pursuing a Diploma in Information Management at Universiti Teknologi MARA (UiTM).
-         My academic journey has ignited a deep interest in the evolving world of information technology, digital systems, and user-centered information services.
-         With a strong foundation in both theoretical knowledge and practical applications, I am committed to understanding how well-structured information systems can drive operational efficiency, enhance service quality, and support data-driven decision-making within both government agencies and private organizations.</p>
+   <section id="about">
+  <h1>About Me</h1>
+  <p>I am a passionate and highly motivated student currently pursuing a Diploma in Information Management at Universiti Teknologi MARA (UiTM).
+     My academic journey has ignited a deep interest in the evolving world of information technology, digital systems, and user-centered information services.
+     With a strong foundation in both theoretical knowledge and practical applications, I am committed to understanding how well-structured information systems can drive operational efficiency, enhance service quality, and support data-driven decision-making within both government agencies and private organizations.</p>
 
-      <p>Throughout my studies, I have cultivated a strong understanding of the principles and practices of effective information management.
-         I believe that organized, accessible, and secure data is the backbone of successful operations in any institution.
-         My coursework and hands-on projects have sharpened my skills in information organization, metadata creation, records management, and digital content delivery. 
-         I am also proficient in essential tools such as Microsoft Office Suite (Word, Excel, PowerPoint), HTML/CSS for basic web development, and various content management systems, which enable me to handle both administrative and technical tasks with confidence.</p>
+  <p>Throughout my studies, I have cultivated a strong understanding of the principles and practices of effective information management.
+     I believe that organized, accessible, and secure data is the backbone of successful operations in any institution.
+     My coursework and hands-on projects have sharpened my skills in information organization, metadata creation, records management, and digital content delivery. 
+     I am also proficient in essential tools such as Microsoft Office Suite (Word, Excel, PowerPoint), HTML/CSS for basic web development, and various content management systems, which enable me to handle both administrative and technical tasks with confidence.</p>
 
-      <p>I take pride in my ability to collaborate effectively in team environments, demonstrated through various group assignments, presentations, and training experiences.
-         My interpersonal and communication skills allow me to convey complex ideas clearly and work harmoniously with diverse individuals.
-         I enjoy contributing to group success and learning from the strengths of others.</p>
-   </section>
+  <p>Here are my top goals as a student of Information Management:</p>
+  <ol>
+  <li>To master digital and physical information organization techniques.</li>
+  <li>To enhance data-driven decision-making through well-structured systems.</li>
+  <li>To develop advanced communication and teamwork skills for future workplace success.</li>
+  <li>To continuously improve my technical proficiency in Microsoft Office, HTML, and CSS.</li>
+  <li>To contribute positively to any team or organization I am part of.</li>
+  </ol>
 
-    <br>
-<section id="biodata">
-  <h2>Biodata</h2>
-  <ul>
-    <li><strong>Full Name:</strong> Mohamad Syazani Aiman Bin Shahrizan</li>
-    <br>
-    <li><strong>Age:</strong> 21 years old</li>
-    <br>
-    <li><strong>Date of Birth:</strong> 16 January 2004</li>
-    <br>
-    <li><strong>Place of Birth:</strong> Hospital KPJ Pasir Gudang</li>
-  </ul>
+  <p>I take pride in my ability to collaborate effectively in team environments, demonstrated through various group assignments, presentations, and training experiences.
+     My interpersonal and communication skills allow me to convey complex ideas clearly and work harmoniously with diverse individuals.
+     I enjoy contributing to group success and learning from the strengths of others.</p>
 </section>
+
+
+<br>
+<section id="biodata">
+ <section id="biodata">
+  <h2>Biodata</h2>
+  <table style="width:100%; border-collapse: collapse;" border="1">
+    <tr>
+      <th style="text-align: left; padding: 8px;">Full Name</th>
+      <td style="padding: 8px;">Mohamad Syazani Aiman Bin Shahrizan</td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 8px;">Gender</th>
+      <td style="padding: 8px;">Male</td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 8px;">Age</th>
+      <td style="padding: 8px;">21 years old</td>
+    </tr>
+     <tr>
+      <th style="text-align: left; padding: 8px;">Religion</th>
+      <td style="padding: 8px;">Islam</td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 8px;">Nationality</th>
+      <td style="padding: 8px;">Malaysia</td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 8px;">Date of Birth</th>
+      <td style="padding: 8px;">16 January 2004</td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 8px;">Place of Birth</th>
+      <td style="padding: 8px;">Hospital KPJ Pasir Gudang</td>
+    </tr>
+  </table>
+</section>
+
 
 
 <br>
     <section id="education">
   <h2>Education</h2>
-      <ul>
-        <li><strong>Universiti Teknologi MARA (UiTM)</strong> – Diploma in Information Management (2023 - 2025)</li>
-        <br>
-        <li><strong>SMK Taman Daya 2(STADA 2)</strong> – SPM (2017 - 2021)</li>
-        <br>
-        <li><strong>Sekolah Kebangsaan Taman Daya 2</strong> – UPSR (2011 - 2016)</li>
-        <br>
-      </ul>
-   </section>
+  <ul>
+    <li>
+      <img src="C:\Users\User\Downloads/uitmlogo.png" alt="UiTM Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;">
+      <strong>Universiti Teknologi MARA (UiTM)</strong> – Diploma in Information Management (2023 - 2025)
+    </li>
+    <br>
+    <li>
+      <img src="C:\Users\User\Downloads/smktd2.jpeg" alt="STADA 2 Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;">
+      <strong>SMK Taman Daya 2 (STADA 2)</strong> – SPM (2017 - 2021)
+    </li>
+    <br>
+    <li>
+      <img src="C:\Users\User\Downloads/sktd2.jpeg" alt="SK Taman Daya 2 Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;">
+      <strong>Sekolah Kebangsaan Taman Daya 2</strong> – UPSR (2011 - 2016)
+    </li>
+    <br>
+  </ul>
+</section>
 
    <section id="experience">
   <h2>Work Experience</h2>
@@ -117,12 +193,13 @@
 <br>
     <section id="skills">
   <h2>Skills</h2>
-      <ul>
-        <li>HTML & CSS (Basic)</li>
-        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
-        <li>Information Management Systems</li>
-        <li>Communication & Teamwork</li>
-      </ul>
+  <ul class="custom-skills">
+    <li>HTML & CSS (Basic)</li>
+    <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+    <li>Information Management Systems</li>
+    <li>Communication & Teamwork</li>
+  </ul>
+
 <br>
       <h3>Skill Proficiency</h3>
        <label>Leadership</label>
@@ -140,11 +217,38 @@
        <label>Bahasa Malaysia</label>
       <progress value="90" max="100"></progress><br>
       <label>English</label>
-      <progress value="88" max="100"></progress><br>
+
+<progress value="88" max="100"></progress><br>
     </section>
 <br>
 <head>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <section id="gallery">
+      <h2>My Gallery</h2>
+      <div class="gallery-container">
+        <img src="C:\Users\User\Documents/first.jpg" alt="Gallery Image 1" />
+        <img src="C:\Users\User\Downloads/third.jpg" alt="Gallery Image 2" />
+        <img src="C:\Users\User\Downloads/second.jpg" alt="Gallery Image 3" />
+        <img src="C:\Users\User\Downloads/fourth.jpg" alt="Gallery Image 4" />
+        <img src="C:\Users\User\Downloads/fifth.jpg" alt="Gallery Image 5" />
+
+         <video width="320" height="240" controls>
+      <source src="C:\Users\User\Downloads/two.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <video width="320" height="240" controls>
+      <source src="C:\Users\User\Downloads/one.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <video width="320" height="240" controls>
+      <source src="C:\Users\User\Downloads/3vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+      </div>
+    </section>
 
  <section id="contact">
   <h2>Contact</h2>
