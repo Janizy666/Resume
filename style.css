@@ -1,11 +1,13 @@
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #f4f4f4;
   color: #7f7e65;
 }
+
 #contact {
-  background-color: #cfc6c6;
+  background-color: #42d3b4;
   padding: 20px;
   border-radius: 5px;
 }
@@ -40,6 +42,27 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+aside nav {
+  margin-top: 30px;
+  width: 100%;
+}
+
+aside nav a {
+  display: block;
+  padding: 10px 0;
+  color: #42d3b4;
+  text-decoration: none;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: 0.3s;
+}
+
+aside nav a:hover {
+  color: #fff;
+  border-left: 3px solid #33d9b2;
+  padding-left: 10px;
 }
 
 .profile {
@@ -89,25 +112,79 @@ aside {
   transform: scale(1.03);
 }
 
-aside nav {
-  margin-top: 30px;
+#biodata table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-aside nav a {
-  display: block;
-  padding: 10px 0;
-  color: #42d3b4;
-  text-decoration: none;
-  font-weight: 500;
-  border-left: 3px solid transparent;
-  transition: 0.3s;
+#biodata th {
+  background-color: #858a8d;
+  color: white;
+  text-align: left;
+  padding: 12px;
+  font-weight: normal;
 }
 
-aside nav a:hover {
-  color: #fff;
-  border-left: 3px solid #33d9b2;
-  padding-left: 10px;
+#biodata td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+#biodata tr:hover {
+  background-color: #f1f1f1;
+}
+
+#biodata h2 {
+  color: #afbbc1;
+  border-bottom: 2px solid #a4acb0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.custom-skills li {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.custom-skills li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+
+progress {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
 }
 
 main {
@@ -131,12 +208,6 @@ ul {
   padding-left: 20px;
 }
 
-progress {
-  width: 100%;
-  height: 15px;
-  margin-bottom: 15px;
-}
-
 footer {
   margin-top: 50px;
   text-align: center;
@@ -149,5 +220,5 @@ a {
 }
 
 a:hover {
-  text-decoration:burlywood;
+  text-decoration: burlywood;
 }
