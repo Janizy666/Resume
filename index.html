@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Syazani Aiman</title>
+  <link rel="stylesheet" href="ex4.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <div class="container home">
+    <div id="clock" class="clock">Loading time...</div>
+
+    <section class="hero">
+      <img src="C:\Users\User\Documents/profile.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Welcome to My Personal Website</h1>
+      <p>Hello! I'm <strong>Mohamad Syazani Aiman Bin Shahrizan</strong>, Welcome to my website</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Syazani Aiman. Created for IMD318 Personal Website Assignment.</p>
+  </footer>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById('clock').textContent = "Current Time: " + time;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
+</body>
+</html>
